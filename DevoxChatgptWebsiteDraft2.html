@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Petition Website</title>
+  <link rel="stylesheet" href="DevoxChatgptStyleDraft1.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Petition Website Logo">
+      <h1>Petition Website</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Browse</a></li>
+        <li><a href="#">Create</a></li>
+        <li><button class="connect-wallet-btn">Connect Wallet</button></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="petitions">
+      <h2>Browse Petitions</h2>
+      <form>
+        <input type="text" placeholder="Search..." class="search-bar">
+        <button type="submit" class="search-btn">Search</button>
+      </form>
+      <ul>
+        <li>
+          <a href="#">
+            <h3>Petition Title</h3>
+            <p>Description of the petition.</p>
+            <span class="tags">#Tag1 #Tag2</span>
+          </a>
+        </li>
+        <!-- Repeat list items for each petition -->
+      </ul>
+    </section>
+    <section class="create-petition">
+      <h2>Create Petition</h2>
+      <form>
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title" class="form-field">
+        <label for="description">Description</label>
+        <textarea id="description" name="description" class="form-field"></textarea>
+        <label for="tags">Tags</label>
+        <input type="text" id="tags" name="tags" class="form-field">
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

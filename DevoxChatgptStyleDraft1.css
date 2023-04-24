@@ -1,0 +1,275 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header styles */
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding: 1rem 0;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 3rem;
+    margin-right: 1rem;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin: 0 1rem;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  nav a:hover {
+    color: #afa;
+  }
+  
+  .connect-wallet-btn {
+    background-color: #afa;
+    border: none;
+    color: #000;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .connect-wallet-btn:hover {
+    background-color: #8f8;
+  }
+  
+  /* Main styles */
+  main {
+    margin: 2rem;
+  }
+  
+  section.petitions {
+    margin-bottom: 2rem;
+  }
+  
+  section.petitions h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  section.petitions form {
+    margin-bottom: 1rem;
+  }
+  
+  section.petitions input[type="text"] {
+    background-color: #ccc;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 4px;
+    width: 50%;
+  }
+  
+  section.petitions button[type="submit"] {
+    background-color: #afa;
+    border: none;
+    color: #000;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  section.petitions button[type="submit"]:hover {
+    background-color: #8f8;
+  }
+  
+  section.petitions ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  section.petitions li {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  section.petitions li:hover {
+    background-color: #fafafa;
+  }
+  
+  section.petitions a {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  section.petitions a:hover {
+    color: #afa;
+  }
+  
+  section.petitions .tags {
+    background-color: #c9c9f0;
+    border-radius: 4px;
+    color: #000;
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.25rem 0.5rem;
+  }
+  
+  section.petitions .tags:hover {
+    background-color: #c9c9ff;
+  }
+  
+  section.create-petition {
+    margin: 2rem 0;
+    padding: 2rem;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+  }
+  
+  section.create-petition h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  section.create-petition label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  section.create-petition input[type="text"],
+  section.create-petition textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  
+  section.create-petition textarea {
+    height: 10rem;
+  }
+  
+  section.create-petition button[type="submit"] {
+    display: block;
+    margin: 1rem 0 0 auto;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #7d60ff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  section.create-petition button[type="submit"]:hover {
+    background-color: #6c4dff;
+  }
+  
+  /* Responsive Styles */
+  
+  @media only screen and (max-width: 768px) {
+    /* Header */
+    
+    header {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .logo {
+      margin-bottom: 1rem;
+    }
+    
+    /* Navigation Menu */
+    
+    nav {
+      margin-top: 1rem;
+    }
+    
+    nav ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    nav li {
+      margin-bottom: 0.5rem;
+    }
+    
+    /* Browse Petitions Section */
+    
+    section.petitions {
+      margin: 2rem 0;
+    }
+    
+    section.petitions h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    section.petitions form {
+      margin-bottom: 1rem;
+    }
+    
+    section.petitions input[type="text"] {
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    section.petitions button[type="submit"] {
+      margin-top: 0.5rem;
+    }
+    
+    /* Create Petition Section */
+    
+    section.create-petition {
+      margin: 2rem 0;
+      padding: 1rem;
+    }
+    
+    section.create-petition h2 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    section.create-petition input[type="text"],
+    section.create-petition textarea {
+      margin-bottom: 0.5rem;
+    }
+    
+    section.create-petition button[type="submit"] {
+      margin-top: 1rem;
+    }
+  }
